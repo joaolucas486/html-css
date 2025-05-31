@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+.modulo1 > ol {
+    display: none;
+}
+
+.modulo1:hover ol {
+    display: inline;
+}
+
+.modulo2 ol {
+    display: none;
+}
+
+.modulo2:hover ol {
+    display: inline;
+}
+
+div {
+    display: inline-flex;
+
+    border-width: 5px;
+    border-style: ridge;
+    border-color: white;
+
+    background-color: gray;
+    box-shadow: 5px 5px 11px rgba(0, 129, 129, 0.774);
+
+}
+
+body {
+    background-color: rgba(11, 112, 112, 0.719);
+    text-align: center;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: left;
+}
+
