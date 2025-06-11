@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio de tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .nota {
+            text-align: center;
+        }
+
+        .destacado {
+            background-color: gray;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2" class="destacado" scope="col">Área</th>
+                <th rowspan="2" class="destacado" scope="col">Disciplinas</th>
+                <th colspan="2" class="destacado" scope="colgroup">Notas</th>
+                <th rowspan="2" class="destacado" scope="col">Média</th>
+            </tr>
+            <tr>
+                <th class="destacado" scope="col">Nota 1</th>
+                <th class="destacado" scope="col">Nota 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Nota e média de Exatas-->
+            <tr>
+                <th rowspan="4" scope="rowgroup">Exatas</th>
+                <td>Matemática</td>
+                <td class="nota">10.0</td> <!-- Nota 1 -->
+                <td class="nota">10.0</td> <!-- Nota 2 -->
+                <td class="nota">10.0</td> <!-- Média -->
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td class="nota">5.0</td> <!-- Nota 1 -->
+                <td class="nota">6.0</td> <!-- Nota 2 -->
+                <td class="nota">5.5</td> <!-- Média -->
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td class="nota">7.0</td> <!-- Nota 1 -->
+                <td class="nota">6.0</td> <!-- Nota 2 -->
+                <td class="nota">6.5</td> <!-- Média -->
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td class="nota">8.0</td> <!-- Nota 1 -->
+                <td class="nota">6.0</td> <!-- Nota 2 -->
+                <td class="nota">7.0</td> <!-- Média -->
+            </tr>
+            <tr>
+                <th colspan="4" class="destacado" scope="row" style="text-align: left;">Média de Exatas</th>
+                <td class="destacado" style="text-align: center;">0.0</td>
+            </tr>
+            <!-- Nota e média de Humanas -->
+            <tr>
+                <th rowspan="2" scope="rowgroup">Humanas</th>
+                <td>História</td>
+                <td class="nota">9.0</td> <!-- Nota 1 -->
+                <td class="nota">8.5</td> <!-- Nota 2 -->
+                <td class="nota">8.7</td> <!-- Média -->
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td class="nota">9.0</td> <!-- Nota 1 -->
+                <td class="nota">9.0</td> <!-- Nota 2 -->
+                <td class="nota">10.0</td> <!-- Média -->
+            </tr>
+            <tr>
+                <th colspan="4" class="destacado" scope="row" style="text-align: left;">Média de Humanas</th>
+                <td class="destacado" style="text-align: center;">0.0</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
