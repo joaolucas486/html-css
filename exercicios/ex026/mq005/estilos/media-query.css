@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+/* Breakpoints de Dispositivos
+---------------------------------------------
+Pequenas telas / Smartphones pequenos: até 479px
+Celulares (retratos comuns): 480px até 767px
+Tablets (modo retrato e paisagem): 768px até 1023px
+Laptops / Desktops pequenos: 1024px até 1439px
+Desktops grandes / Monitores HD+: 1440px até 1919px
+Ultra-wide / 4K e maiores: 1920px ou mais
+*/
+
+
+@media screen and (min-width: 768px) {
+    span#burguer {
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    menu li {
+        display: inline-block;
+    }
+
+    main {
+        width: 768px;
+    }
+}
