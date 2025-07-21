@@ -1,13 +1,22 @@
 @charset "UTF-8";
 
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
 .container {
+    width: 100vw;
+    height: 100vh;
     display: grid;
-    grid-template: 40px 20px 100px 20px / 1fr 2fr 1fr;
+    grid-template: 100px 50px 1fr 50px / 1fr 150px;
 }
 
 .topo {
     background-color: aqua;
     grid-area: 1 / 1 / 2 / -1;
+    
 }
 
 .menu {
@@ -17,12 +26,12 @@
 
 .principal {
     background-color: blueviolet;
-    grid-area: 3 / 1 / 4 / -2;
+    grid-area: 3 / 1 / 4 / 2;
 }
 
 .secundario {
     background-color: brown;
-    grid-area: 3 / 3 / 4 / -1;
+    grid-area: 3 / 2 / 4 / -1;
 }
 
 .rodape {
