@@ -16,7 +16,6 @@
 .topo {
     background-color: aqua;
     grid-area: 1 / 1 / 2 / -1;
-    
 }
 
 .menu {
@@ -38,3 +37,4 @@
     background-color: yellowgreen;
     grid-area: 4 / 1 / 5 / -1;
 }
+
